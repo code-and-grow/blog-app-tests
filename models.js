@@ -5,8 +5,8 @@ mongoose.Promise = global.Promise;
 
 const blogPostSchema = mongoose.Schema({
   author: {
-    firstName: String,
-    lastName: String
+    firstName: {type: String},
+    lastName: {type: String}
   },
   title: {type: String, required: true},
   content: {type: String},
