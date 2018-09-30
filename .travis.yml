@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: UpLDtY1GIm2gOk4utnxNG1RmvZhCBbzfvdUSBSeK4V4aOeQP4U8cpfMp9EZZXoxDJDQQVvkzvXUpotQ9A/4/mXzXenbiQvBFFxv74RVcGNgcHXGmL8NGgOOm2U2NzxAxT81XbXZFFZ5Xm8u1Ici+fsbQmwVxbCS7ru+LxlUws+/gn5bSvh7LlU4pke9TkCduma11XfvdeY6Yq+Tkoi9+MAwoxn2RxBNxr6ABh9m7ggdumnccAixAUdk2oxZh6im9C2qrG6RQNJsJrZBeccP96qAOGzhMlI/VRfterIwf8iImEcCESppPCXv/T0A4eBuNmVrfBd0mHokP/YM5m3lMJmsv4xIlP/q5uyPGp8sIwbTbKbcobqZQ9QV7WeZmapCVYRKDDJxEbiQoujewtTLiqr7QDF0+3pNljX2E4Rs92EReyDhAooiqMVnJhtF8uWOc3lRyYZw42LYqp/daOhLgD4WFdaWr3OM0omkugBwZ1z9PqwJaSPsGr0i+ujuSa9rJg8AvpiUeL7MuGBZNX8glwZUGWZm1OWLoIDdFydf2LwvuV88zxNNQc/SPja+DCFg9WceZlced5kW/ubvzJf9h0DX6ByiWsjlw5aLAKG9PeCu+j7ASfhVvCKmdxc/imbcu/3H+IpcmCkc8E4Xt9GBpo2UODjptyIqDIiV5It/a1og=
+  app: sheltered-badlands-49423
+  on:
+    repo: pjotrpaan/blog-app-tests
